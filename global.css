@@ -5,6 +5,36 @@
     font-size: 14px
     width: 100%;
     padding: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+    nav {
+    margin-top: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .con{
+    margin: 10px 0;
+  }
+
+  .biz{
+    margin: 10px 0;
+  }
+
+  .medd{
+    margin: 10px 0;
+  }
+
+  .lists{
+    margin: 10px 0;
   }
 }
 
