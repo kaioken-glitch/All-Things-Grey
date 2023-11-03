@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&family=Roboto&display=swap');
 
+@media (max-width 768px){
+  body{
+    font-size: 14px
+  }
+}
+
 body{
   font-family: 'Nunito', sans-serif;
   background-color: rgb(57, 57, 57);
