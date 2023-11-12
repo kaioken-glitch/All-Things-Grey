@@ -1,6 +1,16 @@
-const h2Element - document
+const text = "Your text goes here";
+        const speed = 100; // Adjust the speed of typing
 
+        let i = 0;
+        const textContainer = document.getElementById('biz');
 
+        function type() {
+            if (i < text.length) {
+                textContainer.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            }
+        }
 
 
 
