@@ -1,49 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&family=Roboto&display=swap');
 
-@media (max-width 768px){
+@media (max-width: 768px){
   body{
-    font-size: 14px
-    width: 100%;
-    padding: 10px;
-    flex-direction: column;
-    text-align: center;
-  }
-
-    nav {
-    margin-top: 10px;
-  }
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav li {
-    margin: 0;
-    margin-bottom: 10px;
-  }
-
-  .con{
-    margin: 10px 0;
-  }
-
-  .biz{
-    margin: 10px 0;
-  }
-
-  .medd{
-    margin: 10px 0;
-  }
-
-  .lists{
-    margin: 10px 0;
+    font-size: 14px;
   }
 }
 
 body{
   font-family: 'Nunito', sans-serif;
   background-color: rgb(57, 57, 57);
-  width: 100%
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .nav{
@@ -95,6 +60,7 @@ a:hover{
   background-color: rgb(71, 71, 71);
   width: 100%;
   margin: 0 auto;
+  flex-wrap: wrap;
   margin-top: 100px;
   height: 300px;
   align-self: center;
@@ -102,6 +68,9 @@ a:hover{
   text-align: center;
   border-radius: 8px;
   box-shadow: 15px 0  10px 15px hsl(0, 0%, 17%);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #000;
 }
 
 .biz{
@@ -121,16 +90,18 @@ a:hover{
 
 h1{
   cursor: pointer;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   margin: 0 auto;
   font-weight: bold;
   font-size: 3em;
   transition: color 0.3s;
   color: rgb(103, 103, 103);
+  flex-grow: 1;
+  flex-basis: 200;
 }
 
 h1:hover{
-  color: silver;
+  color: aliceblue;
   text-shadow: 0 0 10px silver;
 }
 
@@ -144,6 +115,16 @@ h2{
   overflow: hidden;
   border-right: 2px solid rgb(149, 149, 149);
   animation: typing 5s steps(40, end) infinite, cursor-blink 1s infinite;
+}
+
+h4{
+  margin: 0 auto;
+  font-size: 3em;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  color: silver;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @keyframes typing{
@@ -166,6 +147,9 @@ h2{
   background-color: rgb(91, 91, 91);
   margin: 10px;
   display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: 200;
   flex-direction: column;
   box-shadow: 12px 0 10px 12px hsl(0, 0%, 17%);
   border-radius: 8px;
@@ -180,4 +164,104 @@ h2{
   flex-direction: row;
   margin-top: 25px;
   margin: 30px;
+  flex-wrap: wrap;
+}
+
+p{
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0 auto;
+  margin-top: 8rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.affiliate-footer {
+  background-color: rgb(57, 57, 57);
+  padding: 20px 0;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Container for the footer sections */
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Style for each individual footer section */
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-section p{
+  display: inline;
+  white-space: wrap;
+}
+
+/* Style for footer section headings */
+.footer-section h3 {
+  color: #0066cc;
+}
+
+/* Style for footer section links */
+.footer-section a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.footer-section a:hover{
+  color: lime;
+}
+
+/* Style for the bottom section of the footer */
+.footer-bottom {
+  background-color: rgb(57, 57, 57);
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Style for links in the bottom section */
+.footer-bottom a {
+  color: #646464;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #525252;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cta-button:hover{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #525252;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
 }
