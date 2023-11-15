@@ -265,3 +265,9 @@ footer{
   border-radius: 5px;
   margin-top: 20px;
 }
+
+.footer-section a img{
+  width: 44px;
+  height: 26px;
+  margin-top: 4px;
+}
